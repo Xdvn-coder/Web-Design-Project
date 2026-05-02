@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotocopyMedan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#beranda">Fotocopy<span color="black">Medan</span></a>
+        <div class="nav">  
+            <a class="nav" href="#beranda" data-section="beranda">Beranda</a>
+            <a class="nav" href="about.html" data-section="tentang">Tentang</a>
+            <a class="nav" href="#produk" data-section="produk">Produk</a>
+            <a class="kontak" href="#kontak" data-section="kontak">Kontak <i class="fa-solid fa-phone-flip"></i></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </header>
+            <section class="home" id="beranda"> 
+                <div class="hero-tag">
+                <p><i style="color:#0066cc; align-items: center; padding-right:7px;" class="fa-solid fa-certificate"></i> Open for Orders</p>
+                </div>
+                <div class="hero">
+                    <span>Selamat Datang Di Website Fotokopi Medan</span>
+                    <span>Temukan Solusi Terbaik di Fotokopi Terbaik di Medan</span>
+                </div>
+                <div class="info">
+                    <div class="deskripsi">
+                        <span>Fotocopy Medan Menyediakan Berbagai Jasa Fotokopi dan Alat Tulis Kantor dengan Kualitas Terbaik.</span>
+                        <span>Kami siap melayani kebutuhan fotokopi dan alat tulis kantor Anda dengan pelayanan terbaik.</span>
+                        <p>Hubungi kami untuk informasi lebih lanjut dan penawaran khusus!</p>
+                    </div>
+                    <img class="foto-profil" src="./profil.jpeg" alt="Foto Profil">
+                </div>
+                <div class="portal">
+                    <a class="produk" href="#produk" data-section="produk">Lihat Produk<i class="fa-solid fa-arrow-right"></i></a>
+                    <a class="tentang" href="about.html" data-section="tentang">Tentang Kami</a>
+                </div>
+            </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p class="logo">Fotocopy<span>Medan</span></p>
+                <p class="footer-deskripsi">Penyedia jasa fotokopi dan alat tulis kantor terbaik di kota Medan</p>
+            </div>
+            <div class="footer-right">
+                <p>Kontak Kami</p>
+                <a href="https://www.instagram.com/dafanesp?igsh=MWNhOWI5ZTB6ZzFpeA==" target="_blank"><i class="fa-brands fa-instagram"></i>dafanesp</a><br>
+                <a href="https://www.tiktok.com/@xdvn_20?_r=1&_t=ZS-9614tGWouvt" target="_blank"><i class="fa-brands fa-tiktok"></i>Xdvn</a><br>
+                <a href="https://wa.me/6282273763397" target="_blank"><i class="fa-brands fa-whatsapp"></i>082273763397</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">Copyright &copy; 2026 Fotocopy Medan. All rights reserved.</p>
+            <p>Dibuat oleh:</p>
+            <div class="footer-credits">
+                <span>Muhammad Davan Esfandiar</span>
+                <span>Fauzan Fani Fadhillah</span>
+                <span>Septian Liasta Pelawi</span>
+            </div>
+            <p>Politeknik Negeri Medan</p>
+        </div>
+    </footer>
+</body>
+    <script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+    }
+    </script>
+</html>
