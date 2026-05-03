@@ -505,8 +505,9 @@
 
             .portal a {
                 width: 100%;
-                padding: 12px 18px;
+                padding: 12px 5px;
                 font-size: 0.9rem;
+                transform: translateX(-5px);
                 justify-content: center;
             }
 
@@ -642,7 +643,7 @@
             }
 
             .portal a {
-                padding: 12px 24px;
+                padding: 12px 20px;
                 font-size: 0.95rem;
             }
 
