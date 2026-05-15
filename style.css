@@ -37,29 +37,6 @@
             gap: 20px;
             align-items: center;    
         }
-        @media (max-width: 768px) {
-        .nav a {
-                display: none;
-                /* sembunyiin menu */
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 20px;
-                background: #111;
-                padding: 15px;
-                border-radius: 10px;
-            }
-        
-            .nav {
-                display: none;
-                /* muncul saat diklik */
-            }
-        
-            .hamburger {
-                display:block;
-                /* tampil di HP */
-            }
-        }
         .nav a{
             background-color: rgba(255, 255, 255, 0.06);
             color: #f6e7b3;
@@ -155,7 +132,7 @@
             border-radius: 100px;
         }
         .hero span:first-child{
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             font-weight: 700;
             color: #f6e7b3;
             font-family: 'Playfair Display', serif;
@@ -166,7 +143,7 @@
             font-weight: 500;
         }
         .info{
-            display: flex;
+            display:flex;
             align-items: center;
             justify-content: space-between;
             gap: 40px;
@@ -218,6 +195,7 @@
             border-radius: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             flex-shrink: 0;
+            object-fit: fill;
         }
         .portal{
             display: flex;
@@ -238,6 +216,7 @@
         .portal a.tentang {
             border: 2px solid rgba(212, 175, 55, 0.65);
             display: inline-flex;
+            align-items: center;
         }
         .portal a.tentang:hover{
             transition: 0.5s;
@@ -250,6 +229,7 @@
             align-items: center;
             color:#111;
             gap: 8px;
+            margin: 0;
         }
         .portal a.produk:hover{
             background: #e1c864;
@@ -298,8 +278,7 @@
             gap: 40px;
             transform: translateX(60px);
             max-width: 1200px;
-            margin: 0 auto;
-
+            margin: 0 auto; 
         }
         .footer-left{
             max-width:350px;
@@ -342,6 +321,8 @@
             color: #f0e4b8;
             font-size: 0.95rem;
             margin-bottom: 8px;
+            word-break:break-all;
+            overflow-wrap: break-word;
         }
         .footer-right a:hover {
             color: #d4af37;
@@ -404,6 +385,192 @@
             margin-top: 12px;
         }
 
+        .produk{
+            margin: 0 auto;
+            padding: 20px 40px;
+            padding-bottom:20px;
+            max-width: 1400px;
+            box-sizing: border-box;
+        }
+
+        .produk-tittle{
+            display:flex;
+            gap: 10px;
+            color: #c5ba58; 
+            font-size: 1.5rem;
+            transform: translateY(10px);
+            justify-content: center;
+        }
+
+        .second-tittle{
+            display: flex;
+            gap:5px;
+            color:#f6e7b3;
+            font-size: 1.3rem;
+            padding-left:24px;
+            transform: translateY(10px);
+        }
+
+        .produk-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,max-content));
+            gap: 60px;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+
+        .card{
+            border-radius: 15px;
+            background: rgba(15, 15, 15, 0.88);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.16);
+        }
+
+        .card img{
+            width:15.5rem;
+            display:block;
+            border-radius: 15px 15px 0 0;
+            border-color: rgba(212, 175, 55, 0.16);
+            background: white;
+            box-sizing: border-box;
+        }
+
+        .card-body{
+            padding: 18px 0 18px 18px;    
+        }
+
+        .card-body p{
+            color: #f6e7b3;
+            margin: 5px 0;
+        }
+
+        .card-body p:first-child{
+            font-weight: 600;
+            color: #d4af37;
+        }
+
+        .form-box{
+            flex: none;
+            height: 50%;
+            width: 50%;
+            background: #c9a325;
+            margin: 0px;
+            border: #725515 solid 2px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px rgba(212, 175, 55, 0.25);
+}
+        .form-box input,
+        .form-box textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #c9a325;
+        }
+
+        .form-box button {
+            background: #ffcc00;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .map iframe {
+            width: 150%;
+            height: 448px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+            height: 50%;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .kontak-deskripsi {
+            width: auto;
+            background: rgba(40, 39, 35, 0.88);
+            border-radius: 20px;
+            padding: 30px;
+            color: #f1e7c8;
+            text-align: center;
+            box-shadow: 0 2px 35px #656252af;
+            justify-content: left;
+        }
+
+        .contact-info {
+            background: linear-gradient(to right, #1f1f1f, #2b2b2b);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: auto;
+        }
+
+        .contact-info h2 {
+            font-size: 48px;
+            color: #f5e6c8;
+            margin-bottom: 35px;
+        }
+
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-item {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 215, 0, 0.08);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            padding: 18px 25px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: #f5e6c8;
+            font-size: 24px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 215, 0, 0.15);
+        }
+
+        .contact-item i {
+            font-size: 28px;
+            color: #d4af37;
+        }
+
+        .kontak-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .alamat {
+            display: flex;
+            align-items: center;
+        }
+
+        .alamat span {
+            text-align: left;
+            width: 100%;
+        }
+
         /* Responsivitas HP - Max 480px */
         @media (max-width: 480px) {
             header {
@@ -454,6 +621,8 @@
             .hero {
                 width: 90%;
                 padding: 25px;
+                padding-right: 20px;
+                transform: translateX(-5px);    
                 margin-top: 50px;
                 border-radius: 30px;
             }
@@ -595,10 +764,9 @@
                 letter-spacing: 2px;
             }
 
-            .about-deskripsi {
-                border-radius: 30px;
-                padding: 20px;
-                font-size: 0.9rem;
+            .produk-container{
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
         }
 
@@ -672,5 +840,10 @@
             .footer-bottom {
                 padding-top: 30px;
                 padding-right: 0;
+            }
+
+            .produk-container{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 18px;
             }
         }

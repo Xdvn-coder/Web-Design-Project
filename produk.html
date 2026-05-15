@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotocopyHijrah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#beranda">Fotocopy<span color="black">Hijrah</span></a>
+        <div class="nav">  
+            <a class="nav" href="index.html" data-section="beranda">Beranda</a>
+            <a class="nav" href="about.html" data-section="tentang">Tentang</a>
+            <a class="nav" href="produk.html" data-section="produk">Produk</a>
+            <a class="kontak" href="kontak.html" data-section="kontak">Kontak <i class="fa-solid fa-phone-flip"></i></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <section class="produk" id="produk">
+        <div class="produk-tittle"><i class="fa-solid fa-box-open" style="color:#c5ba58; transform: translateY(24px); font-size: 2.3rem;"></i>
+            <p>Katalog Kami</p>
+        </div>
+        <div class="second-tittle">
+            <i class="fa-solid fa-handshake" style="color:#c5ba58; margin-right: 10px; transform: translateY(24px); font-size: 1.6rem;"></i>
+            <p>Layanan Kami</p>
+        </div>
+        <div class="produk-container">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX09V8pYmg3Ixx9dAJmUXBiir3l_HrVP2TeQ&s" alt="Printer">
+                <div class="card-body">
+                    <p>Print Warna</p>
+                    <p>Rp 1000/lembar</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.freeiconspng.com/thumbs/printer-icon/hardware-page-peripheral-print-printer-icon--icon-search-engine-13.png" alt="Printer">
+                <div class="card-body">
+                    <p>Print Hitam Putih</p>
+                    <p>Rp 500/lembar</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc9xiSVF_bSiTMPbnRb2BpdRtL3hk-8OsbTQ&s" alt="Fotocopy">
+                <div class="card-body">
+                    <p>Fotocopy</p>
+                    <p>Rp 250/lembar</p>    
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://png.pngtree.com/element_our/sm/20180716/sm_5b4cb283e4212.jpg" alt="Spanduk">
+                <div class="card-body">
+                    <p>Pembuatan Spanduk</p>
+                    <p>Rp 25000</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_B14NhC-oL9uPpPWJh4Aoy1eOQ5nuLZ9e4w&s" alt="Cetak Foto">
+                <div class="card-body">
+                    <p>Cetak Foto</p>
+                    <p>Rp 5000/3 lembar</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-tittle"><i class="fa-solid fa-tools" style="color:#c5ba58; margin-right: 10px; transform: translateY(24px); font-size: 1.6rem;"></i>
+            <p>Alat Tulis Kantor</p>
+        </div><div class="produk-container">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbnaJFKQsKClHxmJv6C95-nYVnOMKjH0IDiA&s" alt="Pulpen.png">
+                <div class="card-body">
+                    <p>Pulpen Standard ST009</p>
+                    <p>Rp 15000/kotak</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILQ7RmcF0Oh61TSca8eAmYsx6hv4bxhJE9Q&s" alt="Spidol.png">
+                <div class="card-body">
+                    <p>Spidol Snowman</p>
+                    <p>Rp 8000</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://bangkitperkasa.com/storage/2023/12/Buku-Tulis-Campuss-36-Lembar.jpeg" alt="Buku tulis.png">
+                <div class="card-body">
+                    <p>Buku Tulis Big Boss</p>
+                    <p>Rp 25000/pcs</p>    
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOEFJLefJ-_A084W_rE_PBiXVJ3E37MnaDZA&s" alt="Pulpen Kenko.png">
+                <div class="card-body">
+                    <p>Pulpen Kenko</p>
+                    <p>Rp 40000/pcs</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://digipaysatu.kemenkeu.go.id/hotlink//digipay-assets/produk/2022/830790-kertas-hvs-sidu-a3-70-gsm-karton.png" alt="Kertas HVS A3.png">
+                <div class="card-body">
+                    <p>Kertas HVS A3 SIDU</p>
+                    <p>Rp 132000</p>
+                </div>
+            </div>
+        </div>  
+
+    </section>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p class="logo">Fotocopy<span>Hijrah</span></p>
+                <p class="footer-deskripsi">Penyedia jasa fotokopi dan alat tulis kantor terbaik di kota Medan</p>
+            </div>
+            <div class="footer-right">
+                <p>Kontak Kami</p>
+                <a href="mailto:faisalumri79@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>faisalumri79@gmail.com</a><br>
+                <a href="https://wa.me/082353572332" target="_blank"><i class="fa-brands fa-whatsapp"></i>082353572332</a><br>
+                <a href="https://maps.app.goo.gl/y3FU4MJerzSXBc4N8" target="_blank"><i class="fa-solid fa-location-dot"></i>
+                    Jl. Bunga Ncole XIV, Kemenangan<br>Tani, Kec. Medan Tuntungan, Kota<br>  Medan, Sumatera Utara 20136</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">Copyright &copy; 2026 Fotocopy Hijrah. All rights reserved.</p>
+            <p>Dibuat oleh:</p>
+            <div class="footer-credits">
+                <span>Muhammad Davan Esfandiar</span>
+                <span>Fauzan Fani Fadhillah</span>
+                <span>Septian Liasta Pelawi</span>
+            </div>
+            <p>Politeknik Negeri Medan</p>
+        </div>
+    </footer>
+</body>
+</html>
