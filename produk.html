@@ -13,13 +13,13 @@
 <body>
     <header>
         <a class="logo" href="#beranda">Fotocopy<span color="black">Hijrah</span></a>
-        <div class="nav">  
-            <a class="nav" href="index.html" data-section="beranda">Beranda</a>
-            <a class="nav" href="about.html" data-section="tentang">Tentang</a>
-            <a class="nav" href="produk.html" data-section="produk">Produk</a>
-            <a class="kontak" href="kontak.html" data-section="kontak">Kontak <i class="fa-solid fa-phone-flip"></i></a>
+        <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav" id="nav">  
+            <a class="nav-link" href="index.html" data-section="beranda">Beranda</a>
+            <a class="nav-link" href="about.html" data-section="tentang">Tentang</a>
+            <a class="nav-link" href="produk.html" data-section="produk">Produk</a>
+            <a class="nav-link kontak" href="kontak.html" data-section="kontak">Kontak <i class="fa-solid fa-phone-flip"></i></a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
     </header>
     <section class="produk" id="produk">
         <div class="produk-tittle"><i class="fa-solid fa-box-open" style="color:#c5ba58; transform: translateY(24px); font-size: 2.3rem;"></i>
@@ -132,5 +132,6 @@
             <p>Politeknik Negeri Medan</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

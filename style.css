@@ -69,9 +69,10 @@
             transition: 0.5s;
             transform: scale(1.03) translateY(-2px);
         }
-        .hamburger {
+        .hamburger{
             display: none;
-            font-size: 24px;
+            font-size: 30px;
+            color: white;
             cursor: pointer;
         }
         body{
@@ -587,16 +588,24 @@
                 width: 100%;
                 flex-wrap: wrap;
                 gap: 10px;
+                display:none;
+            }
+
+            .nav.active {
+                display: flex;
+                flex-direction: column;
             }
 
             .nav a {
                 padding: 8px 12px !important;
                 font-size: 0.85rem !important;
                 border-radius: 35px !important;
+                width:400px;
+                justify-content: center;
             }
 
             .nav a.kontak {
-                width: 100%;
+                width: 400px;
                 justify-content: center;
             }
 
@@ -764,9 +773,55 @@
                 letter-spacing: 2px;
             }
 
+            .produk{
+                padding: 20px 16px;
+            }
+
+            .produk-tittle{
+                flex-direction: column;
+                gap: 8px;
+                align-items:center;
+            }
+
+            .second-tittle{
+                justify-content: center;
+                padding-left: 0;
+            }
+
             .produk-container{
-                grid-template-columns: 1fr;
-                gap: 15px;
+                grid-template-columns: repeat(3, minmax(120px, 1fr));
+                gap: 12px;
+                padding: 0;
+            }
+
+            .card{
+                width: 100%;
+                min-width: 0;
+            }
+
+            .card img{
+                width: 100%;
+                max-width: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .footer-right {
+                width: 100%;
+            }
+
+            .footer-right a {
+                display: block;
+                word-break: break-word;
+            }
+
+            .footer-bottom {
+                text-align: center;
+                padding-right: 0;
             }
         }
 
@@ -842,8 +897,30 @@
                 padding-right: 0;
             }
 
+            .produk{
+                padding: 25px 24px;
+            }
+
+            .produk-tittle{
+                justify-content: center;
+            }
+
+            .second-tittle{
+                justify-content: center;
+                padding-left: 0;
+            }
+
             .produk-container{
-                grid-template-columns: repeat(2, 1fr);
-                gap: 18px;
+                grid-template-columns: repeat(3, minmax(140px, 1fr));
+                gap: 16px;
+            }
+
+            .card img{
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .footer-right a {
+                display: block;
             }
         }
