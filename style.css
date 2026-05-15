@@ -306,7 +306,7 @@
         }
         .footer-right{
             margin-top: -70px;
-            transform: translateY(25px)translateX(500px);
+            transform: translateY(25px)translateX(450px);
             font-size: 0.95rem;
         }   
         .footer-right p {
@@ -322,8 +322,7 @@
             color: #f0e4b8;
             font-size: 0.95rem;
             margin-bottom: 8px;
-            word-break:break-all;
-            overflow-wrap: break-word;
+
         }
         .footer-right a:hover {
             color: #d4af37;
@@ -450,12 +449,79 @@
             color: #d4af37;
         }
 
+        .kontak-container{
+            display: flex;
+            margin:90px;
+            padding: 60px ;
+            height: 300px;
+            border: #a89968 solid 1px;
+            border-radius: 50px;
+        }
+
+        .deskripsi-kontak{
+            color:#f6e7b3;
+        }
+
+        .jenis-kontak{
+            display:flex;
+            flex-direction: column;
+            transform: translateY(15px);
+            gap: 8px;
+        }
+
+        .kontak-link{
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            margin: 10px 0 0 40px;
+            padding: 10px;
+            transform:translateX(30px) translateY(-20px);
+            border: 1px solid rgba(255, 255, 255, 0.459);
+            border-radius: 10px;
+            gap:20px;
+            height: 65px;
+            width: 390px;
+        }
+
+        .kontak-link:hover{
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow: 1px 1px 10px #ffd75fc4;
+            transition: 0.5s;
+            transform: translateX(30px) translateY(-25px);
+        }
+        .nama-kontak{
+            display:flex;
+            flex-direction: column;
+            margin-left: 5px;
+            color: #f6e7b3;
+            font-size: 1rem;
+            transform: translateX(-20px);
+        }
+
+        .nama-kontak span:first-child{
+            font-weight: 600;
+            color: #ffffff79;
+        }
+
+        .kontak-logo{
+            color: #d4af37;
+            font-size: 2rem;
+            border-radius: 5px;
+            margin: 10px;
+            border:#57554a solid 1px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .form-box{
             flex: none;
             height: 50%;
-            width: 50%;
-            background: #c9a325;
-            margin: 0px;
+            width: 85%;
+            background: hsl(46, 69%, 47%);
+            margin: 90px;
             border: #725515 solid 2px;
             padding: 10px;
             border-radius: 10px;
@@ -464,7 +530,8 @@
         .form-box input,
         .form-box textarea {
             width: 95%;
-            padding: 10px;
+            transform:translateX(8px);
+            padding: 20px;
             margin-bottom: 10px;
             border-radius: 8px;
             border: 1px solid #c9a325;
@@ -478,98 +545,6 @@
             border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
-        }
-
-        .map iframe {
-            width: 150%;
-            height: 448px;
-            border-radius: 10px;
-            border: none;
-        }
-
-        .flex-container {
-            display: flex;
-            width: 100%;
-            height: 50%;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .kontak-deskripsi {
-            width: auto;
-            background: rgba(40, 39, 35, 0.88);
-            border-radius: 20px;
-            padding: 30px;
-            color: #f1e7c8;
-            text-align: center;
-            box-shadow: 0 2px 35px #656252af;
-            justify-content: left;
-        }
-
-        .contact-info {
-            background: linear-gradient(to right, #1f1f1f, #2b2b2b);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: auto;
-        }
-
-        .contact-info h2 {
-            font-size: 48px;
-            color: #f5e6c8;
-            margin-bottom: 35px;
-        }
-
-        .contact-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .contact-item {
-            width: 100%;
-            max-width: 500px;
-            background: rgba(255, 215, 0, 0.08);
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            padding: 18px 25px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-            color: #f5e6c8;
-            font-size: 24px;
-            font-weight: 500;
-            transition: 0.3s ease;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-3px);
-            background: rgba(255, 215, 0, 0.15);
-        }
-
-        .contact-item i {
-            font-size: 28px;
-            color: #d4af37;
-        }
-
-        .kontak-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 30px;
-        }
-
-        .alamat {
-            display: flex;
-            align-items: center;
-        }
-
-        .alamat span {
-            text-align: left;
-            width: 100%;
         }
 
         /* Responsivitas HP - Max 480px */
@@ -823,6 +798,48 @@
                 text-align: center;
                 padding-right: 0;
             }
+
+            .kontak-container {
+                margin: 15px 10px;
+                padding: 20px 15px;
+                height: auto;
+                border-radius: 15px;
+                gap: 10px;
+            }
+
+            .deskripsi-kontak h1 {
+                font-size: 1rem;
+                line-height: 1.2;
+            }
+
+            .deskripsi-kontak p {
+                font-size: 0.8rem;
+                line-height: 1.3;
+            }
+
+            .jenis-kontak {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .kontak-link {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                padding: 10px;
+                gap: 10px;
+                flex-direction: row;
+                justify-content: flex-start;
+                text-align: left;
+            }
+
+            .nama-kontak {
+                margin-left: 0;
+                transform: none;
+                text-align: left;
+            }
         }
 
         /* Responsivitas Tablet - 481px - 768px */
@@ -922,5 +939,45 @@
 
             .footer-right a {
                 display: block;
+            }
+
+            .kontak-container {
+                margin: 25px 20px;
+                padding: 25px 20px;
+                height: auto;
+                border-radius: 20px;
+                gap: 15px;
+            }
+
+            .deskripsi-kontak h1 {
+                font-size: 1.3rem;
+            }
+
+            .deskripsi-kontak p {
+                font-size: 0.85rem;
+            }
+
+            .jenis-kontak {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+            }
+
+            .kontak-link {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                padding: 12px;
+                gap: 12px;
+                flex-direction: row;
+                justify-content: flex-start;
+                text-align: left;
+            }
+
+            .nama-kontak {
+                margin-left: 0;
+                transform: none;
+                text-align: left;
             }
         }
