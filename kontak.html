@@ -67,15 +67,7 @@
             <form action="#" method="post">
                 <input type="text" name="nama" placeholder="Nama Anda" required>
                 <textarea name="saran" rows="6" placeholder="Tulis saran,keluhan ataupun komentar Anda di sini..." required></textarea>
-                <button onclick="kirimPesan(event)">Kirim Saran</button>
-                    <script>
-                        function kirimPesan(event) {
-                                event.preventDefault();
-                            alert("Terima kasih, saran, Keluhan atau Komentar Anda telah kami terima!");
-                            window.location.href = "kontak.html";
-                        }
-                    </script>
-                </button>
+                <button type="button" onclick="kirimPesan(event)">Kirim Saran</button>
             </form>
         </div>
         </div>

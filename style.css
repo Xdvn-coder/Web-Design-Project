@@ -399,7 +399,12 @@
             color: #c5ba58; 
             font-size: 1.5rem;
             transform: translateY(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.25);
             justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
+            padding-bottom: 20px; 
         }
 
         .second-tittle{
@@ -408,14 +413,16 @@
             color:#f6e7b3;
             font-size: 1.3rem;
             padding-left:24px;
-            transform: translateY(10px);
+            padding-top: 20px;
+            transform: translateY(10px) translateX(25px);
         }
 
         .produk-container{
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(250px,max-content));
             gap: 60px;
-            padding: 20px;
+            padding-left: 50px;
+            padding-top:20px;
             padding-bottom: 50px;
         }
 
@@ -448,14 +455,16 @@
             font-weight: 600;
             color: #d4af37;
         }
-
+        
         .kontak-container{
             display: flex;
             margin:90px;
             padding: 60px ;
             height: 300px;
             border: #a89968 solid 1px;
-            border-radius: 50px;
+            border-radius: 30px;
+            background: rgba(15, 15, 15, 0.88);
+            box-shadow: 0 2px 35px #7a713eaf;
         }
 
         .deskripsi-kontak{
