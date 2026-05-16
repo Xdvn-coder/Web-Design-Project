@@ -38,21 +38,17 @@
             align-items: center;    
         }
         .nav a{
-            background-color: rgba(255, 255, 255, 0.06);
             color: #f6e7b3;
             backdrop-filter: blur(10px);
             text-decoration: none;
             padding: 10px 15px;
-            border: 1px solid rgba(212, 175, 55, 0.14);
             border-radius: 40px;
             display: flex;
         }
         .nav a:hover{
-            opacity: 0.8;
+            color: #ffc507;
             border-radius: 50px;
-            background: rgba(212, 175, 55, 0.18);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: 0.5s;
+            transition: 0.1s;
         }
         .nav a.kontak {
             background: #d4af37;
@@ -248,13 +244,14 @@
         .about-tittle{
             color: #c5ba58;
             padding: 30px;
+            padding-bottom: 10px;
             transform:translateY(20px);
             text-transform: uppercase;
             letter-spacing: 5px;
             font-family: 'Playfair Display', serif; 
             gap:5px;
             display: inline-flex;
-            font-size: 1.25rem;
+            font-size: 2rem;
         }
         .about-deskripsi{
             max-width: 1200px;
@@ -398,13 +395,15 @@
             gap: 10px;
             color: #c5ba58; 
             font-size: 1.5rem;
-            transform: translateY(10px);
+            font-size:50px;
+            font-family: 'Playfair Display', serif;
             border-bottom: 1px solid rgba(212, 175, 55, 0.25);
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
             width: 85%;
-            padding-bottom: 20px; 
+            padding-top:30px;
+            padding-bottom: 0px; 
         }
 
         .second-tittle{
@@ -554,6 +553,32 @@
             border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
+        }
+
+        .font {
+            color: #c5ba58;
+            padding: 30px;
+            transform:translateY(20px);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-family: 'Playfair Display', serif; 
+            text-align: center;
+            font-size: 50px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding: 30px;
+            margin: 3%;  
+        }
+        .gallery {
+            width: 25%;
+            height: 25%;
+            object-fit: cover;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(2, 4, 2, 5);
         }
 
         /* Responsivitas HP - Max 480px */
