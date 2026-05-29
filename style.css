@@ -197,14 +197,42 @@
             padding-top: 8px;
             line-height: 1.6;
         }
-        .foto-profil{
+        .slider{
             width: 400px;
             height: 300px;
-            object-fit: cover;
-            border-radius: 30px;
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
-            flex-shrink: 0;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
             object-fit: fill;
+            border-radius: 20px;
+        }
+        .slides{
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img{
+            width: 400px;
+            height: 400px;
+            object-fit: fill;
+            
+        }
+        .prev,
+        .next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .prev{
+            left: 10px;
+        }
+        .next{
+            right: 10px;
         }
         .portal{
             display: flex;
@@ -445,6 +473,12 @@
             border: 1px solid rgba(37, 99, 235, 0.2);
         }
 
+        .card:hover{
+            transform: translateY(-5px);
+            transition: 0.5s;
+        }
+
+
         .card img{
             width:15.5rem;
             display:block;
@@ -468,6 +502,103 @@
             color: #0052cc;
         }
         
+        .openproduk{
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(6px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            z-index: 999;
+        }
+
+        .openproduk.active{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .produk-detail{
+            width: fit-content;
+            background: rgb(255, 254, 254);
+            padding: 30px;
+            border-radius: 20px;
+            border-bottom: 8px solid rgb(37, 85, 189);
+            animation: muncul 0.3s ease;
+            color: #2c5aa0;
+        }
+
+        .produk-detail h2{
+            margin: 15px 0;
+            color: #0052cc;
+            transform: translateY(10px);
+        }
+        
+        .produk-detail p{
+            margin: 10px 0;
+        }
+
+        .produk-detail a{
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.93rem;
+            padding: 10px 20px;
+            height:fit-content;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transform: translateX(13px);
+        }
+
+        .produk-detail a:hover{
+            background: #1e40af;
+            transition: 0.5s ease;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+            transform: scale(1.03) translateX(13px);
+        }
+
+        .produk-detail img{
+            width: 15.5rem;
+            border-radius: 10px;
+            justify-content: center;
+            
+        }
+
+        .openproduk.active.produk-detail{
+            transform: scale(1);
+        }
+
+        .openproduk.hide{
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .close-btn{
+            float: right;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        @keyframes muncul{
+            from{
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            to{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
         .kontak-container{
             display: flex;
             margin:90px;
