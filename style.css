@@ -212,7 +212,7 @@
         }
         .slides img{
             width: 400px;
-            height: 400px;
+            height: 300px;
             object-fit: fill;
             
         }
@@ -514,6 +514,7 @@
             visibility: hidden;
             transition: 0.3s;
             z-index: 999;
+            overflow-y: auto;
         }
 
         .openproduk.active{
@@ -823,6 +824,23 @@
                 font-size: 0.9rem;
             }
 
+            .slider {
+                width: 400px;
+                max-width: 360px;
+                height: 300px;
+            }
+
+            .slides img {
+                width: 400px;
+                height: 300px;
+                object-fit: fill;
+            }
+
+            .prev,
+            .next {
+                padding: 8px 12px;
+            }
+
             .info {
                 flex-direction: column;
                 gap: 25px;
@@ -986,6 +1004,23 @@
                 border-radius: 20px 20px 0 0;
             }
 
+            .openproduk .produk-detail {
+                width: 250px;
+                max-width: 420px;
+                padding: 20px;
+                height: fit-content;
+            }
+
+            .produk-detail img {
+                width: 100%;
+                height: auto;
+            }
+
+            .produk-detail a {
+                width: fit-content;
+                max-width: 100%;
+            }
+
             .footer-container {
                 flex-direction: column;
                 align-items: stretch;
@@ -1133,6 +1168,21 @@
                 font-size: 0.95rem;
             }
 
+            .slider {
+                width: 100%;
+                max-width: 520px;
+            }
+
+            .slides img {
+                width: 100%;
+                height: auto;
+            }
+
+            .prev,
+            .next {
+                padding: 10px 14px;
+            }
+
             .nav {
                 width: 100%;
                 flex-wrap: wrap;
@@ -1228,6 +1278,22 @@
             }
 
             .card img{
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .openproduk .produk-detail {
+                width: fit-content;
+                max-width: 520px;
+                padding: 24px;
+            }
+
+            .produk-detail img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .produk-detail a {
                 width: 100%;
                 max-width: 100%;
             }
